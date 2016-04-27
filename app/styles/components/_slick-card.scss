@@ -1,0 +1,84 @@
+$slick-card-color: #F16576;
+
+.slick-card {
+	display: block;
+	overflow:hidden;
+	padding: 2em;
+	border: 1px solid $slick-card-color;
+	border-radius: 3px;
+	margin: auto;
+	font-size: .9rem;
+
+	&:hover {
+		@extend .slick-card--active;
+	}
+
+	* + * {
+		margin-top: .8em;
+	}
+
+	&__group {
+		padding: 1em;
+	}
+
+	&__wrapper {
+		padding: 1em;
+	}
+
+	&__icon {
+		text-align: center;
+		.material-icons {
+			font-size: 2.5rem;
+			color: $slick-card-color;
+			border-bottom: 3px solid $slick-card-color;
+		}
+	}
+
+	&__title {
+		text-align: center;
+		font-weight: bold;
+		text-transform: uppercase;
+	}
+
+	&__content {
+		text-align: center;
+	}
+
+	&__readmore {
+		text-align: center;
+		a {
+			padding: .5em 1.2em;
+			border: 2px solid $slick-card-color;
+			border-radius: 5px;
+			display: inline-block;
+			text-transform: uppercase;
+			font-size: .9em;
+			color: $slick-card-color;
+		}
+	}
+	* > &__readmore {
+		margin-top: 2em;
+	}
+}
+
+.slick-card--active {
+	background: $slick-card-color;
+	color: white;
+
+	.slick-card__readmore {
+		a {
+			border-color: white;
+			color: white;
+			&:hover {
+				background-color: rgba(white, 0.3);
+			}
+		}
+	}
+
+	.slick-card__icon {
+		.material-icons {
+			border-color: white;
+			color: white;
+		}
+	}
+}

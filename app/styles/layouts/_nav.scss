@@ -1,0 +1,15 @@
+.nav-wrapper {
+	@include font-garamond;
+
+	ul a {
+		font-size: 1.2rem;
+	}
+}
+
+#nav-logo {
+	svg {
+		position: absolute;
+		height: 100%;
+		fill: white;
+	}
+}

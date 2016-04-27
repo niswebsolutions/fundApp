@@ -1,0 +1,15 @@
+/**
+ * Typography
+ */
+
+$lineHeight: 26px !default;
+$font-size: 18px !default;
+
+@import url(https://fonts.googleapis.com/css?family=EB+Garamond);
+
+@mixin font-garamond {
+	font-family: 'EB Garamond', serif;
+}
+.font-garamond {
+	@include font-garamond;
+}

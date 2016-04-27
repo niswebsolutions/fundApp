@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 573 174" fill="transparent">
+<!--   <path d="M0 0h573v174H0z"/>
+  <path fill="#F16576" d="M104.667 121.834C104.667 129.104 98.1 135 90 135H38.667C30.567 135 24 129.105 24 121.834V69.167C24 61.897 30.566 56 38.667 56H90c8.1 0 14.667 5.895 14.667 13.167v52.667z"/>
+  <path fill="none" d="M132.045 34.244h330.213V148.33H132.045z"/> -->
+  <text fill="#fff" transform="translate(132.045 56.764)">
+    <tspan x="0" y="0" font-family="'Garamond'" font-size="34.2">Allegheny Innovation</tspan><tspan x="0" y="34.56" font-family="'Garamond'" font-size="28.8">Capital Fund</tspan>
+  </text>
+  <path fill="none" d="M133.045 123.376h347v36h-347z"/>
+  <text fill="#fff" transform="translate(133.045 131.897)">
+    <tspan x="0" y="0" font-family="'MyriadPro-Regular'" font-size="12">GENERATE GREAT RETURNS </tspan><tspan x="143.074" y="0" fill="#F16576" font-family="'MyriadPro-Regular'" font-size="12">•</tspan><tspan x="146.458" y="0" font-family="'MyriadPro-Regular'" font-size="12"> INVEST IN OUR COMMUNITIES</tspan>
+  </text>
+  <path fill="none" stroke="#F16677" stroke-width="2.035" stroke-linecap="round" stroke-miterlimit="10" d="M134.6 108l418.4-1"/>
+  <!-- <text transform="translate(392.666 93.406)" fill="#F16576" font-family="'Garamond-Bold'" font-size="14">
+    AlleghenyInnovation.com
+  </text> -->
+<!--   <circle fill="#FFF" cx="64.908" cy="85.597" r="9.467"/>
+  <circle fill="#F16576" cx="66.107" cy="39.351" r="9.467"/>
+  <path fill="none" stroke="#FFF" stroke-width="8.394" stroke-linecap="round" stroke-miterlimit="10" d="M35.417 123.066l30.09-51.32 27.5 51.32"/>
+  <path fill="#F16576" d="M27.937 123.066h73.05v6.334h-73.05z"/> -->
+</svg>

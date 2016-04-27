@@ -1,3 +1,52 @@
-<h2 id="title">Welcome to Ember</h2>
+<nav>
+  <div class="nav-wrapper">
+    <div class="container">
+      {{#link-to "index" id="nav-logo"}}
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 573 174" id="AICFlogo">
+          <path fill="transparent" d="M0 0h573v174H0z"/>
+          <path fill="#F16576" d="M104.667 121.834C104.667 129.104 98.1 135 90 135H38.667C30.567 135 24 129.105 24 121.834V69.167C24 61.897 30.566 56 38.667 56H90c8.1 0 14.667 5.895 14.667 13.167v52.667z"/>
+          <text class="text" transform="translate(132.045 88.764)">
+            <tspan x="0" y="0" font-family="'Garamond'" font-size="38">Allegheny Innovation</tspan><tspan x="0" y="38" font-family="'Garamond'" font-size="32">Capital Fund</tspan>
+          </text>
+          <circle fill="#FFF" cx="64.908" cy="85.597" r="9.467"/>
+          <circle fill="#F16576" cx="66.107" cy="39.351" r="9.467"/>
+          <path fill="none" stroke="#FFF" stroke-width="8.394" stroke-linecap="round" stroke-miterlimit="10" d="M35.417 123.066l30.09-51.32 27.5 51.32"/>
+          <path fill="#F16576" d="M27.937 123.066h73.05v6.334h-73.05z"/>
+        </svg>
+      {{/link-to}}
+      <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li>{{#link-to "index"}} Home {{/link-to}}</li>
+        <li>{{#link-to "team"}} Team {{/link-to}}</li>
+        <li><a href="#!">For Companies</a></li>
+        <li><a href="#!">Our Porfolio</a></li>
+        <li><a href="#!">Press</a></li>
+      </ul>
+      <ul class="side-nav right" id="mobile-demo">
+        <li>{{#link-to "index"}} Home {{/link-to}}</li>
+        <li>{{#link-to "team"}} Team {{/link-to}}</li>
+        <li><a href="#!">Companies</a></li>
+        <li><a href="#!">Porfolio</a></li>
+        <li><a href="#!">Press</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 {{outlet}}
+
+<footer class="footer clearfix">
+  <div class="container">
+    <div class="footer__siteinfo">
+      <div class="footer__siteinfo__text">
+        Copyright &copy; 2016 Allengheny Innovation Capital Fund, All rights Reserved.
+      	Terms of use | Privacy Policy
+    	</div>
+    <img class="footer__siteinfo__logo" src="svg/AICFlogo.svg" alt="AICF Logo">
+    </div>
+  </div>
+</footer>
+
+
+{{!-- ember-cli-materialize modal container --}}
+{{md-modal-container}}

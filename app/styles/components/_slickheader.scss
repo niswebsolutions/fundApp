@@ -1,0 +1,119 @@
+/**
+*
+* Slick Header
+*
+**/
+
+/*doc
+---
+title: Slick Header
+name: slickheader
+category: Components - Slickheader
+---
+```html_example
+  <div class="slickheader">
+    <h1 class="slickheader__title">Let's get coding</h1>
+    <div class="slickheader__subtitle">this is when it gets fun...</div>
+    <div class="slickheader__imgcontainer">
+      <img class="slickheader__img" src="http://i.telegraph.co.uk/multimedia/archive/02850/buzzBB5PW3_2850210b.jpg">
+    </div>
+  </div>
+```
+```html_example
+  <div class="slickheader slickheader--x-large">
+    <h1 class="slickheader__title">Let's get coding</h1>
+    <div class="slickheader__subtitle">this is when it gets fun...</div>
+    <div class="slickheader__imgcontainer">
+      <img class="slickheader__img" src="http://i.telegraph.co.uk/multimedia/archive/02850/buzzBB5PW3_2850210b.jpg">
+    </div>
+  </div>
+```
+*/
+
+.slickheader {
+  @include full-width;
+  overflow: hidden;
+  display: block;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 10;
+  padding: 4em 0;
+  color: white;
+  background-color: $primary-color;
+  background-image: radial-gradient(lighten($primary-color, 7) 20%, $primary-color 100%);
+}
+
+.slickheader__title {
+  @include font-garamond;
+  color: white;
+  position: relative;
+  z-index: 10;
+  font-size: 1.2rem;
+  display: inline;
+  @include breakpoint(500px) {
+    font-size: 2vw;
+  }
+  @include breakpoint($container-max-width) {
+    font-size: 2.5rem;
+  }
+}
+
+.slickheader__subtitle {
+  color: white;
+  text-shadow: 1px 1px 5px #000;
+  position: relative;
+  z-index: 10;
+  position: relative;
+}
+
+.slickheader__imgcontainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.slickheader__img {
+  @include object-fit;
+  object-position: 50% 30%;
+  @include breakpoint(800px) {
+    object-position: 50% 0%;
+  }
+}
+
+.slickheader--title-line {
+  > .container {
+    overflow: hidden;
+  }
+
+  .slickheader__title {
+    @include header--line(white);
+  }
+}
+
+.slickheader--x-large {
+  height: 50vw;
+}
+
+.slickheader--overlay {
+  min-height: 30vw;
+  .slickheader__title {
+    background-color: transparent;
+  }
+  .slickheader__imgcontainer:after {
+    content: '';
+    display: block;
+    background: rgba(#253c5b, 0.6);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}

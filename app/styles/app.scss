@@ -1,0 +1,29 @@
+// Fix for Roboto font path
+$roboto-font-path: '../assets/';
+
+@import 'core/variables';
+
+// Materialize styles
+@import "../../bower_components/materialize/sass/materialize.scss";
+@import "../../bower_components/breakpoint-sass/stylesheets/_breakpoint.scss";
+
+// ember-cli-materialize styles
+@import 'ember-cli-materialize';
+
+@import 'core/misc';
+@import 'core/resets';
+@import 'core/svgs';
+@import 'core/typography';
+
+@import 'layouts/body';
+@import 'layouts/footer';
+@import 'layouts/main';
+@import 'layouts/nav';
+
+@import 'components/alerts';
+@import 'components/branding';
+@import 'components/buttons';
+@import 'components/headers';
+@import 'components/slick-card';
+@import 'components/slickheader';
+@import 'components/teaser';

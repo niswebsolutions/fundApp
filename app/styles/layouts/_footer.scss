@@ -1,0 +1,40 @@
+.footer {
+	position: relative;
+  background-image: url('../images/footer.jpg');
+  background-position: 50% 51%;
+  background-size: cover;
+  color: white;
+
+  &:after {
+  	@include overlay(rgba(#253c5b, 0.6));
+  	z-index: 1;
+  }
+
+  .container {
+  	display: flex;
+  	align-items: flex-end;
+	  min-height: 10vw;
+	  z-index: 2;
+	  position: relative;
+  }
+
+  &__siteinfo {
+  	font-size: .9rem;
+  	display: flex;
+  	justify-content: center;
+  	flex: 1;
+  	align-items: center;
+  	padding: 1em;
+
+  	> * + *  {
+  		padding-left: 1em;
+  	}
+
+  	&__text {
+  	}
+
+  	&__logo {
+  		max-width: 3em;
+  	}
+  }
+}

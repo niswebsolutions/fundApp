@@ -1,0 +1,11 @@
+<div class="container">
+	{{#each model as |member|}}
+		<div class="teammember">
+			<h3 class="teammember__name">{{member.name}}</h3>
+			<div class="teamember__title">{{member.title}}</div>
+			<div class="teammember__bio">{{{member.bio}}}</div>
+		</div>
+	{{/each}}
+
+	{{outlet}}
+</div>
